@@ -1,8 +1,23 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 
-
-
 @import "./base/common";
 @import "./base/section";
 @import "./base/container";
+
+@import "./components/title";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/speciality";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./layout/backdrop";
+@import "./layout/modal-window";
+@import "./layout/modal-form";
+
+
+

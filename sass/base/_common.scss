@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -30,4 +40,12 @@ ul {
 
 .button {
     cursor: pointer;
+}
+
+.body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
