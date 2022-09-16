@@ -14,13 +14,13 @@
     border-radius: 4px;
     color: var(--icon-color);
     transition: color var(--transition-dur-and-func),
-        border var(--transition-dur-and-func);
-}
+    border var(--transition-dur-and-func);
 
-.client-link:hover,
-.client-link:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+     }
 }
 
 .client-icon {

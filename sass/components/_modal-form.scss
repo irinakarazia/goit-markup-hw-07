@@ -36,13 +36,14 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color var(--transition-dur-and-func);
+
+    &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            }
 }
 
-.modal-form-input:focus {
-    outline: none;
-    border-color: var(--accent-color);
 
-}
 
 .modal-form-imput-icon {
     position: absolute;
@@ -50,16 +51,15 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition-dur-and-func);
-}
 
-.modal-form-input:focus+.modal-form-imput-icon {
-    fill: var(--accent-color);
+    .modal-form-input:focus+& {
+            fill: var(--accent-color);
+        }
 }
 
 .modal-form-comment {
     margin-bottom: 20px;
 }
-
 .modal-form-message {
     display: block;
     width: 100%;
@@ -69,19 +69,20 @@
     padding: 12px 16px;
     resize: none;
     transition: border-color var(--transition-dur-and-func);
-}
 
-.modal-form-message::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
 
-.modal-form-message:focus {
-    outline: none;
-    border-color: var(--accent-color);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 
 .modal-form-check-field {
@@ -107,25 +108,25 @@
     border-radius: 2px;
     cursor: pointer;
     transition: border-color var(--transition-dur-and-func);
+
+    .modal-form-check:checked+& {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    
+        .modal-form-check:focus+& {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 }
 
 .modal-form-own-checkbox-icon {
     display: none;
     fill: var(--primary-white-color);
-}
 
-.modal-form-check:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
-    display: block;
-}
-
-.modal-form-check:checked+.modal-form-own-checkbox {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.modal-form-check:focus+.modal-form-own-checkbox {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    .modal-form-check:checked+.modal-form-own-checkbox & {
+        display: block;
+    }
 }
 
 .contract {
@@ -149,10 +150,11 @@
     background-color: #2196F3;
     cursor: pointer;
     transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+     &:focus {
+            background-color: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
-.modal-form-submit:hover,
-.modal-form-submit:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}

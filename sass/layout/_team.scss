@@ -54,13 +54,13 @@
     background-color: var(--primary-white-color);
     color: var(--icon-color);
     transition: color var(--transition-dur-and-func),
-        background-color var(--transition-dur-and-func);
-}
+    background-color var(--transition-dur-and-func);
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+      }
 }
 
 .social-list-icon {

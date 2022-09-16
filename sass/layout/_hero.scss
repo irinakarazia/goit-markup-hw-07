@@ -53,10 +53,11 @@
     color: var(--primary-white-color);
     background-color: #2196F3;
     transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+         background-color: #188CE8;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     }
 }
 
-.modal-open-button:hover,
-.modal-open-button:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
