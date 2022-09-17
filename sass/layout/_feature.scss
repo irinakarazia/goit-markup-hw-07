@@ -9,9 +9,7 @@
 }
 
 .feature-list-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     height: 120px;
     margin-bottom: 30px;
     border: 1px solid transparent;

@@ -13,9 +13,7 @@
     display: inline-block;
     margin-bottom: 20px;
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 1.19);
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
 }
@@ -87,9 +85,7 @@
 
 .footer-social-link {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     margin-right: 10px;
     width: 44px;
     height: 44px;
@@ -153,9 +149,7 @@
 }
 
 .footer-mailing-list-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 200px;
     height: 50px;
     padding: 10px;
@@ -163,10 +157,8 @@
     border: 1px solid transparent;
     border-radius: 4px;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
+    @include font(16px, 700, 1.87);
+       text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: #2196F3;

@@ -1,8 +1,6 @@
 .portfolio-menu {
-    display: flex;
-    align-items: center;
+    @extend %align;
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +35,6 @@
     position: relative;
     overflow: hidden;
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -54,12 +51,13 @@
     transition: var(--transition-dur-and-func);
 
     .portfolio-project-link:hover &,
-    .portfolio-project-link:focus &{
-         transform: translateY(0%);
-      }
+    .portfolio-project-link:focus & {
+        transform: translateY(0%);
+    }
 }
 
 .portfolio-project-name {
+    padding: 20px 24px;
     padding: 20px 24px;
 }
 

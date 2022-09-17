@@ -33,9 +33,7 @@
 }
 
 .modal-open-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 216px;
     height: 50px;
     padding-left: 10px;
