@@ -1,14 +1,14 @@
-.feature-list {
+.feature__list {
     display: flex;
     gap: 30px;
 }
 
-.feature-list-item {
+.feature__item {
     width: 270px;
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.feature-list-div {
+.feature__div {
     @extend %align;
     height: 120px;
     margin-bottom: 30px;
@@ -17,14 +17,14 @@
     background-color: #F5F4FA;
 }
 
-.feature-list-title {
+.feature__title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.feature-list-article {
+.feature__article {
     line-height: 1.71;
     color: var(--secondary-text-color);
 }

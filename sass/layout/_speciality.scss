@@ -2,20 +2,20 @@
     padding-top: 0;
 }
 
-.speciality-list {
+.speciality__list {
     display: flex;
     gap: 30px;
 }
 
-.speciality-list-wrapper {
+.speciality__wrapper {
     position: relative;
 }
 
-.speciality-list-item {
+.speciality__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.speciality-overlay {
+.speciality__overlay {
     position: absolute;
     top: 224px;
     left: 0;
