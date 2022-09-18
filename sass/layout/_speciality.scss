@@ -2,16 +2,16 @@
     padding-top: 0;
 }
 
-.speciality__list {
+.speciality-list {
     display: flex;
     gap: 30px;
 }
 
-.speciality__wrapper {
+.speciality-list__wrapper {
     position: relative;
 }
 
-.speciality__item {
+.speciality-list__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 

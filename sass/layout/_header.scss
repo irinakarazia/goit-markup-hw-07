@@ -17,11 +17,7 @@
     align-items: center;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-}
+
 
 .header-logo {
     margin-right: 93px;
@@ -31,8 +27,12 @@
 .accent {
     color: var(--accent-color);
 }
-
-.menu-link {
+.nav-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.nav-menu-link {
     position: relative;
     font-weight: 500;
     line-height: 1.14;
